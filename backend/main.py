@@ -2,6 +2,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
+from fastapi.responses import RedirectResponse
 from pathlib import Path
 
 # Import routers – each router defines its own prefix
@@ -55,3 +56,7 @@ app.mount("/static", StaticFiles(directory=str(static_dir), html=True), name="st
 @app.get("/health")
 def health():
     return {"status": "ok"}
+
+@app.get("/")
+def read_root():
+    return RedirectResponse(url="/static/index.html")
