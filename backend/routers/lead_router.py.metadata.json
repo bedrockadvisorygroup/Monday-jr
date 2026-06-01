@@ -1,0 +1,5 @@
+{
+  "artifactType":  "ARTIFACT_TYPE_OTHER",
+  "summary":  "lead_router.py containing endpoints to manage leads (CRUD, status updates) and transition leads into ClientProjects (Tuesday Jr handoff). Generates a handoff_package.md markdown brief in the client folder.",
+  "updatedAt":  "2026-05-29T19:36:43.715407600Z"
+}

@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monday Jr | Pre-Meeting Intelligence OS – Bedrock Advisory Group</title>
+  <meta name="description" content="Monday Jr is a pre-meeting intelligence OS for Bedrock Advisory Group. Qualify leads, build hypotheses, and prepare consulting deliverables.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+  <div class="app-container">
+
+    <!-- ═══ SIDEBAR ═══ -->
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="logo-icon">M</div>
+        <h2>Monday <span>Jr</span></h2>
+      </div>
+      <div class="agent-tag">
+        <span class="pulse-dot"></span>
+        <span class="tag-text">Pre-Meeting Intelligence OS</span>
+      </div>
+
+      <nav class="nav-menu">
+        <div class="nav-section-label">Overview</div>
+        <a href="#" class="nav-item active" data-tab="dashboard" id="nav-dashboard">
+          <svg class="nav-icon" viewBox="0 0 24 24"><path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/></svg>
+          <span class="step-number">1.</span> Dashboard
+        </a>
+
+        <div class="nav-section-label">Lead Qualification</div>
+        <a href="#" class="nav-item" data-tab="lead-finder" id="nav-lead-finder">
+          <svg class="nav-icon" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+          <span class="step-number">2.</span> Lead Finder
+        </a>
+        <a href="#" class="nav-item" data-tab="lead-profile" id="nav-lead-profile">
+          <svg class="nav-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/></svg>
+          <span class="step-number">3.</span> Lead Profile
+        </a>
+
+        <div class="nav-section-label">Content Studio</div>
+        <a href="#" class="nav-item" data-tab="magnet-studio" id="nav-magnet-studio">
+          <svg class="nav-icon" viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+          <span class="step-number">4.</span> Lead Magnet Studio
+        </a>
+        <a href="#" class="nav-item" data-tab="literature-builder" id="nav-literature-builder">
+          <svg class="nav-icon" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+          <span class="step-number">5.</span> Literature Builder
+        </a>
+        <a href="#" class="nav-item" data-tab="ppt-builder" id="nav-ppt-builder">
+          <svg class="nav-icon" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+          <span class="step-number">6.</span> Pre-Meeting PPT
+        </a>
+
+        <div class="nav-section-label">Sales Operations</div>
+        <a href="#" class="nav-item" data-tab="discovery-prep" id="nav-discovery-prep">
+          <svg class="nav-icon" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+          <span class="step-number">7.</span> Discovery Prep
+        </a>
+        <a href="#" class="nav-item" data-tab="sales-pipeline" id="nav-sales-pipeline">
+          <svg class="nav-icon" viewBox="0 0 24 24"><path d="M10 20h4V4h-4v16zm-6 0h4v-8H4v8zM16 9v11h4V9h-4z"/></svg>
+          <span class="step-number">8.</span> Sales Pipeline
+        </a>
+        <a href="#" class="nav-item" data-tab="knowledge-library" id="nav-knowledge-library">
+          <svg class="nav-icon" viewBox="0 0 24 24"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H8V4h12v12z"/></svg>
+          <span class="step-number">9.</span> Knowledge Library
+        </a>
+        <a href="#" class="nav-item" data-tab="tuesday-handoff" id="nav-tuesday-handoff">
+          <svg class="nav-icon" viewBox="0 0 24 24"><path d="M19 8l-4 4h3c0 3.31-2.69 6-6 6-1.01 0-1.97-.25-2.8-.7l-1.46 1.46C8.97 19.54 10.43 20 12 20c4.42 0 8-3.58 8-8h3l-4-4zM6 12c0-3.31 2.69-6 6-6 1.01 0 1.97.25 2.8.7l1.46-1.46C15.03 4.46 13.57 4 12 4c-4.42 0-8 3.58-8 8H1l4 4 4-4H6z"/></svg>
+          <span class="step-number">10.</span> Tuesday Jr Handoff
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <span>Monday Jr Operating System · Bedrock Advisory Group</span>
+      </div>
+    </aside>
+
+    <!-- ═══ MAIN CONTENT ═══ -->
+    <main class="main-content">
+
+      <!-- Top Header -->
+      <header class="app-header">
+        <div class="header-search">
+          <h1 id="page-title">Monday Jr | Pre-Meeting Intelligence</h1>
+          <span class="sub-heading" id="page-subheading">Pre-meeting research, lead qualification, and handoff preparation for Bedrock Advisory Group</span>
+        </div>
+        <div class="header-actions">
+          <div class="active-lead-indicator" id="active-lead-badge">No Active Lead Selected</div>
+          <button class="btn btn-primary btn-glow" id="btn-add-lead-modal">+ New Lead</button>
+        </div>
+      </header>
+
+      <!-- View Containers -->
+      <div class="view-viewport">
+
+        <!-- ─── VIEW 0: DASHBOARD ─── -->
+        <section id="view-dashboard" class="view-panel active">
+
+          <!-- KPI Row -->
+          <div class="kpi-grid">
+            <div class="kpi-card">
+              <div class="kpi-icon blue">
+                <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+              </div>
+              <div class="kpi-details">
+                <span class="kpi-label">Total Pipeline Leads</span>
+                <h3 class="kpi-value" id="stat-total-leads">0</h3>
+              </div>
+            </div>
+
+            <div class="kpi-card">
+              <div class="kpi-icon purple">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+              </div>
+              <div class="kpi-details">
+                <span class="kpi-label">Qualified Leads</span>
+                <h3 class="kpi-value" id="stat-qualified-leads">0</h3>
+              </div>
+            </div>
+
+            <div class="kpi-card">
+              <div class="kpi-icon green">
+                <svg viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+              </div>
+              <div class="kpi-details">
+                <span class="kpi-label">Lead Magnets Generated</span>
+                <h3 class="kpi-value" id="stat-magnets-created">0</h3>
+              </div>
+            </div>
+
+            <div class="kpi-card">
+              <div class="kpi-icon yellow">
+                <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+              </div>
+              <div class="kpi-details">
+                <span class="kpi-label">PPT Outlines Built</span>
+                <h3 class="kpi-value" id="stat-decks-created">0</h3>
+              </div>
+            </div>
+
+            <div class="kpi-card">
+              <div class="kpi-icon red">
+                <svg viewBox="0 0 24 24"><path d="M19 8l-4 4h3c0 3.31-2.69 6-6 6-1.01 0-1.97-.25-2.8-.7l-1.46 1.46C8.97 19.54 10.43 20 12 20c4.42 0 8-3.58 8-8h3l-4-4z"/></svg>
+              </div>
+              <div class="kpi-details">
+                <span class="kpi-label">Tuesday Jr Handoffs</span>
+                <h3 class="kpi-value" id="stat-handoffs-created">0</h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── MAIN DASHBOARD GRID (fixed: both cols stay inside) ── -->
+          <div class="dashboard-main-grid">
+
+            <!-- LEFT COLUMN -->
+            <div class="dashboard-left-col">
+
+              <!-- Active Lead Spotlight -->
+              <div class="glass-card spotlight-card" id="dashboard-active-spotlight">
+                <div class="spotlight-header">
+                  <span class="eyebrow">Active Research Subject</span>
+                  <span class="badge approved" id="dash-lead-status">Draft</span>
+                </div>
+                <h2 id="dash-lead-company">No Lead Selected</h2>
+                <p class="subtitle" id="dash-lead-founder">Select a lead from Lead Finder to begin.</p>
+                <div class="dash-quick-details" id="dash-lead-details-row" style="display:none;">
+                  <div class="dash-mini-stat">
+                    <span>Industry</span>
+                    <strong id="dash-lead-industry">-</strong>
+                  </div>
+                  <div class="dash-mini-stat">
+                    <span>Stage</span>
+                    <strong id="dash-lead-stage">-</strong>
+                  </div>
+                  <div class="dash-mini-stat">
+                    <span>Opportunity Score</span>
+                    <strong id="dash-lead-score">-</strong>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Readiness Meter -->
+              <div class="glass-card readiness-meter-card">
+                <h3 style="margin-bottom:14px;">Pre-Meeting Readiness Meter</h3>
+                <div class="readiness-steps">
+                  <div class="step" data-step="1">Lead selected</div>
+                  <div class="step" data-step="2">Public signal review</div>
+                  <div class="step" data-step="3">Pain hypothesis created</div>
+                  <div class="step" data-step="4">Lead magnet created</div>
+                  <div class="step" data-step="5">Pre-meeting PPT created</div>
+                  <div class="step" data-step="6">Tuesday Jr handoff ready</div>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill"></div>
+                </div>
+              </div>
+
+              <!-- Next Recommended Action -->
+              <div class="glass-card advice-card">
+                <div class="advice-header">
+                  <div class="icon-bulb">💡</div>
+                  <h3>Next Recommended Consulting Step</h3>
+                </div>
+                <p id="dash-recommendation-text">Please select a qualified lead from the pipeline or add a new startup profile above to generate intelligence briefs.</p>
+                <div class="actions-panel margin-top-20">
+                  <button class="btn btn-primary" id="dash-btn-next-action">Go to Action</button>
+                </div>
+              </div>
+
+              <!-- Pain Hypothesis Summary -->
+              <div class="glass-card" id="widget-pain-hypothesis">
+                <h3 style="margin-bottom:10px;">Pain Hypothesis Summary</h3>
+                <p class="placeholder-text">Select a lead and generate pain hypotheses to see them summarized here.</p>
+              </div>
+
+            </div><!-- /dashboard-left-col -->
+
+            <!-- RIGHT COLUMN -->
+            <div class="dashboard-right-col">
+
+              <!-- Quick Action Cockpit -->
+              <div class="glass-card">
+                <h3>Quick Action Cockpit</h3>
+                <div class="action-buttons-list">
+                  <button class="btn btn-secondary justify-start" id="btn-quick-finder">
+                    <span class="act-bullet copper">&#8226;</span> Find New Lead
+                  </button>
+                  <button class="btn btn-secondary justify-start" id="btn-quick-profile">
+                    <span class="act-bullet amber">&#8226;</span> Analyze Selected Lead
+                  </button>
+                  <button class="btn btn-secondary justify-start" id="btn-quick-magnet">
+                    <span class="act-bullet green">&#8226;</span> Launch Lead Magnet Studio
+                  </button>
+                  <button class="btn btn-secondary justify-start" id="btn-quick-ppt">
+                    <span class="act-bullet amber">&#8226;</span> Build Pre-Meeting PPT
+                  </button>
+                  <button class="btn btn-secondary justify-start" id="btn-quick-discovery">
+                    <span class="act-bullet copper">&#8226;</span> Open Discovery Prep
+                  </button>
+                  <button class="btn btn-secondary justify-start" id="btn-quick-handoff">
+                    <span class="act-bullet danger" style="color:var(--danger)">&#8226;</span> Handoff to Tuesday Jr
+                  </button>
+                </div>
+              </div>
+
+              <!-- Recent Activity -->
+              <div class="glass-card">
+                <h3>Recent Activity Logs</h3>
+                <div class="activity-log-timeline" id="dash-activity-logs">
+                  <div class="timeline-item">
+                    <span class="timeline-time">System</span>
+                    <p>Monday Jr loaded and database connection verified.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Industry Benchmark Snapshot -->
+              <div class="glass-card" id="widget-benchmark-snapshot">
+                <h3 style="margin-bottom:10px;">Industry Benchmark Snapshot</h3>
+                <p class="placeholder-text">Key benchmark metrics will appear here for the active lead's industry.</p>
+              </div>
+
+              <!-- Discovery Prep Overview -->
+              <div class="glass-card" id="widget-discovery-prep">
+                <h3 style="margin-bottom:10px;">Discovery Prep Overview</h3>
+                <p class="placeholder-text">Agenda and diagnostic questions for the upcoming discovery call.</p>
+              </div>
+
+              <!-- Tuesday Jr Handoff Status -->
+              <div class="glass-card" id="widget-tuesday-handoff-status">
+                <h3 style="margin-bottom:10px;">Tuesday Jr Handoff Status</h3>
+                <p class="placeholder-text">No handoff initiated. Complete the workflow to enable.</p>
+              </div>
+
+              <!-- Knowledge Reuse Advisor -->
+              <div class="glass-card" id="widget-knowledge-reuse">
+                <h3 style="margin-bottom:10px;">Knowledge Reuse Advisor</h3>
+                <ul class="guideline-bullets">
+                  <li><span class="badge approved">reusable</span> – safe to reuse across future work.</li>
+                  <li><span class="badge needs_review">confidential</span> – internal only, review before reuse.</li>
+                  <li><span class="badge converted">client-specific only</span> – do not use outside this client.</li>
+                  <li><span class="badge archived">do not reuse</span> – archived or restricted.</li>
+                </ul>
+              </div>
+
+            </div><!-- /dashboard-right-col -->
+
+          </div><!-- /dashboard-main-grid -->
+
+        </section><!-- /view-dashboard -->
+
+        <!-- ─── VIEW 1: LEAD FINDER ─── -->
+        <section id="view-lead-finder" class="view-panel">
+          <div class="glass-card">
+            <div class="card-header">
+              <h2>Identified Target Leads</h2>
+              <div class="header-filters">
+                <input type="text" placeholder="Filter leads by company..." id="search-leads-input" class="form-control" style="max-width:300px;">
+              </div>
+            </div>
+            <div class="table-responsive">
+              <table class="table" id="leads-table">
+                <thead>
+                  <tr>
+                    <th>Lead Name</th>
+                    <th>Company Name</th>
+                    <th>Industry</th>
+                    <th>Startup Stage</th>
+                    <th>Geography</th>
+                    <th>Pipeline Status</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody id="leads-table-body">
+                  <!-- Generated Dynamically -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- ─── VIEW 2: LEAD PROFILE ─── -->
+        <section id="view-lead-profile" class="view-panel">
+          <div class="profile-grid">
+
+            <div class="glass-card col-span-2">
+              <div class="profile-header">
+                <div class="avatar-large" id="profile-avatar">?</div>
+                <div class="profile-title-block">
+                  <h2 id="profile-lead-name">No Lead Selected</h2>
+                  <p id="profile-company-info">Please select a lead from the Lead Finder tab first.</p>
+                </div>
+                <div class="profile-status-wrapper">
+                  <span class="badge" id="profile-status-badge">Unknown</span>
+                </div>
+              </div>
+              <div class="profile-details-grid">
+                <div class="detail-item">
+                  <span class="detail-label">Industry Sector</span>
+                  <span class="detail-value" id="profile-industry">-</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Startup Stage</span>
+                  <span class="detail-value" id="profile-stage">-</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Geography</span>
+                  <span class="detail-value" id="profile-geography">-</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Website URL</span>
+                  <a href="#" target="_blank" class="detail-value text-link" id="profile-website">-</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Opportunity Gauge -->
+            <div class="glass-card opportunity-gauge-card">
+              <h3>Opportunity Match Score</h3>
+              <div class="gauge-container margin-top-20">
+                <div class="gauge-radial-bar">
+                  <div class="radial-inner">
+                    <span id="gauge-score-value">0%</span>
+                  </div>
+                </div>
+                <span class="gauge-verdict" id="gauge-score-verdict">No Lead Profile Loaded</span>
+              </div>
+            </div>
+
+            <!-- Public Growth Signals -->
+            <div class="glass-card col-span-2">
+              <h3>Observed Public Growth Signals</h3>
+              <p class="subtitle">Indicators qualified via publicly available metrics.</p>
+              <ul class="signal-list margin-top-20" id="profile-signals-list">
+                <li class="signal-list-item">
+                  <span class="signal-tag red">Presumed Gap</span>
+                  <p>Public digital platforms lack structured conversion walkthroughs or demo tours.</p>
+                </li>
+                <li class="signal-list-item">
+                  <span class="signal-tag yellow">Social Activity</span>
+                  <p>Limited founder or corporate organic posting updates on primary professional networks.</p>
+                </li>
+                <li class="signal-list-item">
+                  <span class="signal-tag green">Competitor Signal</span>
+                  <p>Direct segment benchmarks indicate high pricing headroom compared to estimated basic tier charges.</p>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Diagnostic Guidance -->
+            <div class="glass-card">
+              <h3>Pre-Meeting Guidance</h3>
+              <p class="subtitle">Core guidelines to align with Bedrock consulting rules:</p>
+              <ul class="guideline-bullets margin-top-10">
+                <li>Never assume private parameters (e.g. CAC/Churn) as fact.</li>
+                <li>Present findings as opportunity hypotheses to validate.</li>
+                <li>Provide comparison metrics to stimulate founder curiosity.</li>
+              </ul>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- ─── VIEW 3: LEAD MAGNET STUDIO ─── -->
+        <section id="view-magnet-studio" class="view-panel">
+          <div class="studio-container">
+            <div class="studio-controls">
+              <div class="glass-card">
+                <h3>Formulate Hypotheses</h3>
+                <p class="subtitle">Select problem hypotheses to map to Bedrock services</p>
+                <div class="checkbox-group margin-top-20" id="pain-points-checkboxes">
+                  <!-- Seeded Dynamically -->
+                </div>
+                <div class="form-group margin-top-20">
+                  <label for="custom-signals-input">Custom Signal / Public Indicator</label>
+                  <textarea id="custom-signals-input" placeholder="e.g. LinkedIn page has low updates, pricing structure seems flat..." class="form-control" rows="3"></textarea>
+                </div>
+                <div class="actions-panel margin-top-20">
+                  <button class="btn btn-primary w-full btn-glow" id="btn-generate-magnet">Run Lead Magnet Engine</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="studio-workspace">
+              <div class="glass-card">
+                <div class="workspace-header">
+                  <h3>Lead Magnet Studio Cockpit</h3>
+                  <span class="watermark">Monday Jr Studio</span>
+                </div>
+                <div class="tab-subnav">
+                  <button class="sub-tab active" data-subtab="mag-onepager">Diagnostic One-Pager</button>
+                  <button class="sub-tab" data-subtab="mag-hook">Opening Hook</button>
+                  <button class="sub-tab" data-subtab="mag-offer">Suggested Offer</button>
+                </div>
+                <div class="subtab-panel active" id="subpanel-mag-onepager">
+                  <div class="markdown-preview" id="magnet-onepager-content">
+                    <p class="placeholder-text">Click "Run Lead Magnet Engine" on the left to synthesize personalized marketing collateral.</p>
+                  </div>
+                </div>
+                <div class="subtab-panel" id="subpanel-mag-hook">
+                  <div class="copy-box">
+                    <pre id="magnet-hook-content" class="code-text">Hook draft will generate here...</pre>
+                    <button class="btn btn-secondary btn-sm btn-copy" data-target="magnet-hook-content">Copy</button>
+                  </div>
+                </div>
+                <div class="subtab-panel" id="subpanel-mag-offer">
+                  <div class="copy-box">
+                    <blockquote id="magnet-offer-content" class="quote-text">Suggested roadmap invitation will generate here...</blockquote>
+                    <button class="btn btn-secondary btn-sm btn-copy" data-target="magnet-offer-content">Copy</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ─── VIEW 4: LITERATURE BUILDER ─── -->
+        <section id="view-literature-builder" class="view-panel">
+          <div class="literature-layout">
+            <div class="lit-sidebar glass-card">
+              <h3>Written Assets</h3>
+              <p class="subtitle">Customizable messages</p>
+              <div class="vertical-tabs margin-top-20">
+                <button class="v-tab active" data-lit="lit-linkedin">LinkedIn DM Hook</button>
+                <button class="v-tab" data-lit="lit-email">Founder Outreach Email</button>
+                <button class="v-tab" data-lit="lit-whatsapp">WhatsApp Message</button>
+              </div>
+            </div>
+            <div class="lit-body glass-card">
+              <div class="workspace-header">
+                <h3 id="active-lit-title">LinkedIn Connection Hook</h3>
+                <button class="btn btn-secondary btn-sm btn-copy" data-target="active-lit-textarea">Copy Draft</button>
+              </div>
+              <textarea id="active-lit-textarea" class="form-control lit-editor" rows="12">Draft will generate when a lead magnet is created.</textarea>
+            </div>
+          </div>
+        </section>
+
+        <!-- ─── VIEW 5: PRE-MEETING PPT ─── -->
+        <section id="view-ppt-builder" class="view-panel">
+          <div class="ppt-editor-grid">
+            <div class="slide-deck-list" id="ppt-slides-list">
+              <!-- Dynamically populated slide preview list -->
+            </div>
+            <div class="slide-workspace glass-card">
+              <div class="slide-canvas" id="active-slide-canvas">
+                <div class="slide-title-block">
+                  <span class="slide-number-label" id="slide-viewer-number">Slide -</span>
+                  <input type="text" id="slide-viewer-title" class="slide-title-input" value="No slide outline selected">
+                </div>
+                <div class="slide-bullets-area" id="slide-viewer-bullets">
+                  <!-- Dynamically populated inputs -->
+                </div>
+              </div>
+              <div class="slide-footer-actions">
+                <button class="btn btn-secondary" id="btn-save-ppt-changes">Save Slide Changes</button>
+                <button class="btn btn-primary" id="btn-save-ppt-knowledge">Save Deck to Library</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ─── VIEW 6: DISCOVERY PREP ─── -->
+        <section id="view-discovery-prep" class="view-panel">
+          <div class="discovery-prep-grid">
+            <div class="glass-card col-span-2">
+              <h3>Call Agenda &amp; Guidance</h3>
+              <p class="subtitle">Customized agenda to steer the first discussion</p>
+              <div class="markdown-preview margin-top-20" id="discovery-agenda-content">
+                <p class="placeholder-text">Please generate a lead magnet to configure the custom agenda brief.</p>
+              </div>
+            </div>
+
+            <div class="glass-card">
+              <h3>Quick Diagnostic Pitch</h3>
+              <ul class="pitch-tips">
+                <li>
+                  <strong>Safe Validation Tone:</strong>
+                  <p>"Based on public indicators, we estimated some friction points in your segment standards. Does this align with your internal reporting?"</p>
+                </li>
+                <li>
+                  <strong>Proposed Offer:</strong>
+                  <p>"Let's run our comprehensive assessment on your internal numbers to spot CAC leakage."</p>
+                </li>
+              </ul>
+              <div class="actions-panel margin-top-20">
+                <button class="btn btn-success w-full btn-glow" id="btn-trigger-handoff">Confirm Handoff to Tuesday Jr</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ─── VIEW 7: SALES PIPELINE ─── -->
+        <section id="view-sales-pipeline" class="view-panel">
+          <div class="pipeline-board">
+            <div class="pipeline-column" data-status="draft">
+              <div class="column-header">
+                <h3>Draft Pipeline</h3>
+                <span class="count-badge" id="count-draft">0</span>
+              </div>
+              <div class="column-cards" id="cards-draft"></div>
+            </div>
+            <div class="pipeline-column" data-status="needs_review">
+              <div class="column-header">
+                <h3>Needs Review</h3>
+                <span class="count-badge" id="count-needs_review">0</span>
+              </div>
+              <div class="column-cards" id="cards-needs_review"></div>
+            </div>
+            <div class="pipeline-column" data-status="approved">
+              <div class="column-header">
+                <h3>Approved</h3>
+                <span class="count-badge" id="count-approved">0</span>
+              </div>
+              <div class="column-cards" id="cards-approved"></div>
+            </div>
+            <div class="pipeline-column" data-status="used_in_outreach">
+              <div class="column-header">
+                <h3>Outreach Sent</h3>
+                <span class="count-badge" id="count-used_in_outreach">0</span>
+              </div>
+              <div class="column-cards" id="cards-used_in_outreach"></div>
+            </div>
+            <div class="pipeline-column" data-status="converted">
+              <div class="column-header">
+                <h3>Tuesday Handoff</h3>
+                <span class="count-badge" id="count-converted">0</span>
+              </div>
+              <div class="column-cards" id="cards-converted"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ─── VIEW 8: KNOWLEDGE LIBRARY ─── -->
+        <section id="view-knowledge-library" class="view-panel">
+          <div class="library-layout">
+            <div class="glass-card">
+              <div class="workspace-header">
+                <h2>Shared Knowledge Repository</h2>
+                <span class="watermark">Bedrock Intelligence Core</span>
+              </div>
+              <div class="tab-subnav">
+                <button class="sub-tab active" data-libtab="lib-benchmarks">Industry Benchmarks</button>
+                <button class="sub-tab" data-libtab="lib-pains">Seeded Pain Categories</button>
+                <button class="sub-tab" data-libtab="lib-items">Reusable Slide Decks &amp; Plays</button>
+              </div>
+
+              <div class="lib-subpanel active" id="libpanel-benchmarks">
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Industry</th>
+                        <th>Dimension</th>
+                        <th>Standard Tier</th>
+                        <th>Market Leader Target</th>
+                        <th>Bedrock Playbook</th>
+                      </tr>
+                    </thead>
+                    <tbody id="lib-benchmarks-table-body"><!-- Dynamic --></tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div class="lib-subpanel" id="libpanel-pains">
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Category</th>
+                        <th>Common Web Signals</th>
+                        <th>Suggested Diagnostic Qs</th>
+                        <th>Bedrock Service Alignment</th>
+                      </tr>
+                    </thead>
+                    <tbody id="lib-pains-table-body"><!-- Dynamic --></tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div class="lib-subpanel" id="libpanel-items">
+                <div class="permissions-guidance-card margin-bottom-20">
+                  <h4>Consulting Reuse Permissions Explained:</h4>
+                  <div class="permissions-expl-grid">
+                    <div class="expl-item"><span class="badge approved">reusable</span><p>Approved template assets that can be freely adapted across sectors.</p></div>
+                    <div class="expl-item"><span class="badge needs_review">confidential</span><p>Contains core strategic formulations; requires strict access verification before reuse.</p></div>
+                    <div class="expl-item"><span class="badge converted">client-specific only</span><p>Protected client diagnostic findings; never to be shared or replicated.</p></div>
+                    <div class="expl-item"><span class="badge archived">do not reuse</span><p>Archived metrics or invalidated hypotheses marked to protect credibility.</p></div>
+                  </div>
+                </div>
+                <div class="library-items-list" id="lib-items-list-container"><!-- Dynamic --></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ─── VIEW 9: TUESDAY JR HANDOFF ─── -->
+        <section id="view-tuesday-handoff" class="view-panel">
+          <div class="glass-card">
+            <div class="card-header">
+              <h2>Tuesday Jr Handoff Workspace</h2>
+              <span class="badge approved">Tuesday Pipeline Intake</span>
+            </div>
+            <p class="subtitle">Track projects promoted from Monday Jr into active consulting scoping.</p>
+            <div class="table-responsive margin-top-20">
+              <table class="table" id="handoffs-list-table">
+                <thead>
+                  <tr>
+                    <th>Project Name</th>
+                    <th>Client Contact</th>
+                    <th>Industry Sector</th>
+                    <th>Location</th>
+                    <th>Status in Active Scoping</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody id="handoffs-list-tbody"><!-- Generated Dynamically --></tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+      </div><!-- /view-viewport -->
+    </main><!-- /main-content -->
+  </div><!-- /app-container -->
+
+  <!-- ═══ MODAL: ADD LEAD ═══ -->
+  <div class="modal-backdrop" id="add-lead-modal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3>Add Qualified Target Lead</h3>
+        <button class="btn-close-modal" id="btn-close-lead-modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form id="add-lead-form">
+          <div class="form-group">
+            <label for="lead-name-input">Lead / Founder Name</label>
+            <input type="text" id="lead-name-input" class="form-control" required placeholder="e.g. Satya Nadella">
+          </div>
+          <div class="form-group">
+            <label for="company-name-input">Company Name</label>
+            <input type="text" id="company-name-input" class="form-control" required placeholder="e.g. Microsoft Cloud">
+          </div>
+          <div class="form-group">
+            <label for="industry-select">Industry</label>
+            <select id="industry-select" class="form-control" required>
+              <option value="B2B SaaS">B2B SaaS</option>
+              <option value="Retail &amp; E-commerce">Retail &amp; E-commerce</option>
+              <option value="Healthcare &amp; Biotech">Healthcare &amp; Biotech</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="stage-select">Startup Stage</label>
+            <select id="stage-select" class="form-control" required>
+              <option value="Seed">Seed</option>
+              <option value="Series A">Series A</option>
+              <option value="Series B">Series B</option>
+              <option value="Bootstrapped">Bootstrapped</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="geography-input">Geography / Location</label>
+            <input type="text" id="geography-input" class="form-control" required placeholder="e.g. Seattle, USA">
+          </div>
+          <div class="form-group">
+            <label for="website-input">Website URL</label>
+            <input type="url" id="website-input" class="form-control" placeholder="https://azure.microsoft.com">
+          </div>
+          <div class="actions-panel justify-end">
+            <button type="button" class="btn btn-secondary" id="btn-cancel-lead-modal">Cancel</button>
+            <button type="submit" class="btn btn-primary btn-glow">Save Target Lead</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

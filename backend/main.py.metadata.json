@@ -1,0 +1,5 @@
+{
+  "artifactType":  "ARTIFACT_TYPE_OTHER",
+  "summary":  "main.py updated to register the new lead, knowledge, and magnet routers, and to mount the static files directory at /static for the dashboard SPA.",
+  "updatedAt":  "2026-05-29T19:37:00.380882400Z"
+}

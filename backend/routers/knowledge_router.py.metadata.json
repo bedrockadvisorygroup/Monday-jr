@@ -1,0 +1,5 @@
+{
+  "artifactType":  "ARTIFACT_TYPE_OTHER",
+  "summary":  "knowledge_router.py containing endpoints to manage the Shared Knowledge Library (CRUD, presets retrieval). Allows filtering by tags, category, and reuse permissions.",
+  "updatedAt":  "2026-05-29T19:36:47.634712200Z"
+}

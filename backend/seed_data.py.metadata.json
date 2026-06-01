@@ -1,0 +1,5 @@
+{
+  "artifactType":  "ARTIFACT_TYPE_OTHER",
+  "summary":  "Seeding data script for Monday Jr consulting presets. Fills the industry_benchmarks and pain_point_patterns tables with data across 10 dimensions and 15 categories.",
+  "updatedAt":  "2026-05-29T19:36:31.920114600Z"
+}

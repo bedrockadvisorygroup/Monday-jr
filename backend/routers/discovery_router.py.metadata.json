@@ -1,0 +1,5 @@
+{
+  "artifactType":  "ARTIFACT_TYPE_OTHER",
+  "summary":  "Fixed syntax errors in discovery_router: corrected function signatures and removed stray colon.",
+  "updatedAt":  "2026-05-26T11:51:45.267733100Z"
+}

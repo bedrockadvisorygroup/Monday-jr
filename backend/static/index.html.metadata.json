@@ -1,0 +1,5 @@
+{
+  "artifactType":  "ARTIFACT_TYPE_OTHER",
+  "summary":  "Fixed HTML: dashboard-actions-block now correctly inside dashboard-main-grid. New widgets placed inside proper columns. No loose elements escape the grid.",
+  "updatedAt":  "2026-05-30T07:23:35.366054600Z"
+}

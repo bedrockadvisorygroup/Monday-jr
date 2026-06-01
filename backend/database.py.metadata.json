@@ -1,0 +1,5 @@
+{
+  "artifactType":  "ARTIFACT_TYPE_OTHER",
+  "summary":  "Added APPROVED enum values and updated get_approved_status mapping.",
+  "updatedAt":  "2026-05-26T12:01:45.550733100Z"
+}
