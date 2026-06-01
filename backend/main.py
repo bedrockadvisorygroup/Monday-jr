@@ -22,6 +22,11 @@ app = FastAPI(title="Consultant Agent Platform & Lead Magnet Studio")
 @app.on_event("startup")
 def on_startup():
     init_db()
+    try:
+        from .seed_data import seed
+        seed()
+    except Exception as e:
+        print(f"Failed to auto-seed database: {e}")
 
 # CORS – permissive for development
 app.add_middleware(
