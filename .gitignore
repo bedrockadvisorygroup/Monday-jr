@@ -1,0 +1,12 @@
+*.metadata.json
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+env/
+.env
+.env.*
+app.db
+clients/
